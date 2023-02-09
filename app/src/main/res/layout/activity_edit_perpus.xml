@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_perpus">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="369dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="22dp"
+        app:cardBackgroundColor="#C2DDF3"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161">
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Id"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/et_katgor"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:hint="Kategory"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/et_judul"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="148dp"
+            android:ems="10"
+            android:hint="Judul"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/et_jumlah"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="207dp"
+            android:ems="10"
+            android:hint="Jumlah"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_pengarang"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="263dp"
+            android:ems="10"
+            android:hint="Pengarang"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_penerbit"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="323dp"
+            android:ems="10"
+            android:hint="Penerbit"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/bt_simpan"
+        android:layout_width="308dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#CE75DD"
+        android:text="SIMPAN"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="308dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#783583"
+        android:text="UPDATE"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_simpan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

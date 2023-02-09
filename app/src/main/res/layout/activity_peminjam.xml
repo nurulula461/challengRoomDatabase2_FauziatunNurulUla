@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".peminjam_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="369dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="22dp"
+        app:cardBackgroundColor="#E4BAEC"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" >
+
+        <EditText
+            android:id="@+id/et_pinjam"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Id"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_judPinjam"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="148dp"
+            android:ems="10"
+            android:hint="Judul"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_jumPinjam"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="207dp"
+            android:ems="10"
+            android:hint="Jumlah dipinjam"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_tglPinjam"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="263dp"
+            android:ems="10"
+            android:hint="Tanggal peminjaman"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/et_pengembalian"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="323dp"
+            android:ems="10"
+            android:hint="Tanggal pengembalian"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/bt_simPinjam"
+        android:layout_width="308dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#C2DDF3"
+        android:textColor="#000000"
+        android:text="SIMPAN"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <Button
+        android:id="@+id/bt_upPinjam"
+        android:layout_width="308dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#4C93CC"
+        android:text="UPDATE"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_pinjam" />
+</androidx.constraintlayout.widget.ConstraintLayout>
